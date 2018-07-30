@@ -8,6 +8,11 @@ ul {
   list-style: none;
 }
 
+.details p {
+  font-size: 17px;
+  color: #707070;
+}
+
 #mainScreen {
   display: grid;
   grid-template-columns: 1fr;
@@ -28,20 +33,20 @@ ul {
 }
 
 #mainScreen .search-bar input {
-  width: 100%;
-  padding: 8px;
+  width: 50%;
+  padding: 16px;
 }
 
 #mainScreen .video-detail {
   grid-area: root-video-detail;
-  width: 100%;
 }
 
 #mainScreen .video-detail iframe {
   width: 100%;
-  height: 400px;
+  height: 500px;
+  
 }
-
+  
 #mainScreen .video-detail .details {
   padding: 16px;
   border: 1px solid #707070;
