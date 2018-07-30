@@ -12,16 +12,19 @@ class SearchBar extends Component {
 
     render() {
         return (
-            <div>
-                 <input onChange={this.onInputChange.bind(this)} />
+            <div className="search-bar">
+                <input 
+                    placeholder="Search Video" 
+                    value={this.state.term}
+                    onChange={event => this.onInputChange(event.target.value)} 
+                />
             </div>
         )
     }
     
-    onInputChange(event){
-        this.setState({
-            term: event.target.value
-        })
+    onInputChange(term){
+       this.setState({term})
+       this.props.onSearchTermChange(term)
     }
 }
 
